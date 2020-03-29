@@ -1,6 +1,6 @@
 <view class="main">
     <view class="goods-box">
-        <image src="{{goods.image}}" class="goods-thumb"></image>
+        <image src="{{goods.img}}" class="goods-thumb"></image>
         
         <navigator open-type="switchTab" url="../cart/cart">
             <view class="carts-icon {{scaleCart?'on':''}}">
@@ -17,7 +17,7 @@
         </view>
         <image wx:if="{{show}}" src="/image/cart1.png" class="to-carts-icon"></image>
         <view class="goods-stock">{{goods.stock}}</view>
-        <view class="goods-title">{{goods.title}}</view>
+        <view class="goods-title">{{goods.name}}</view>
         <view class="goods-price">￥ {{goods.price}}</view>
     </view>
     <view class="goods-tab-box">
@@ -25,7 +25,7 @@
         <view class="goods-tab-nav {{curIndex === 1 ?'on':''}}" bindtap="bindTap" data-index="1">产品参数</view>
         <view class="goods-tab-nav {{curIndex === 2 ?'on':''}}" bindtap="bindTap" data-index="2">售后保障</view>
         <view class="goods-content">
-            <view wx:if="{{curIndex === 0}}">{{goods.detail}}</view>
+            <view wx:if="{{curIndex === 0}}">{{goods.content}}</view>
             <view wx:if="{{curIndex === 1}}">{{goods.parameter}}</view>
             <view wx:if="{{curIndex === 2}}">{{goods.service}}</view>
         </view>

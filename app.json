@@ -30,22 +30,10 @@
         "text": "主页"
       },
       {
-        "pagePath": "page/component/category/category",
-        "iconPath": "image/22.png",
-        "selectedIconPath": "image/21.png",
-        "text": "分类"
-      },
-      {
-        "pagePath": "page/component/cart/cart",
-        "iconPath": "image/32.png",
-        "selectedIconPath": "image/31.png",
-        "text": "购物车"
-      },
-      {
         "pagePath": "page/component/user/user",
-        "iconPath": "image/42.png",
-        "selectedIconPath": "image/41.png",
-        "text": "我的"
+        "iconPath": "image/bImg.png",
+        "selectedIconPath": "image/bImg.png",
+        "text": "图片集"
       }
     ]
   },
